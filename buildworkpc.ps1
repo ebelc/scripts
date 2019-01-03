@@ -3,7 +3,7 @@ Set-ExecutionPolicy Unrestricted -Confirm:$false -Force
 ### INSTALL CHOCOLATEY
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-choco install 7zip awscli azure-cli Boxstarter chefdk conemu firefox git git-credential-manager-for-windows kubernetes-cli nodejs python rsat sql-server-management-studio terraform vagrant vault vmware-powercli-psmodule vscode winpcap wireshark notepadplusplus powershell Fiddler Wireshark slack vlc sysinternals glogg nitroreader.install imgburn winpcap  wincdemu terminals puttytray flashplayerplugin  -Confirm:$false -Force
+choco install 7zip awscli azure-cli Boxstarter chefdk conemu firefox git git-credential-manager-for-windows kubernetes-cli nodejs.install python rsat sql-server-management-studio terraform vagrant vault vmware-powercli-psmodule vscode winpcap wireshark notepadplusplus powershell fiddler slack vlc sysinternals glogg nitroreader.install imgburn  wincdemu terminals putty.install flashplayerplugin curl treesizefree winscp dropbox openssl.light poshgit postman mongodb -Confirm:$false -Force
 
 Import-Module Boxstarter.WinConfig
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
@@ -31,8 +31,7 @@ New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWO
 
 #installed manually
 # securecrt - plus backed up config
-# postman
-# mongodb compass
-# added C:\Users\terrir\AppData\Roaming\npm to the System PATH
+# compass
+# added C:\Users\ebelc\AppData\Roaming\npm to the System PATH
 # vmware remote client and horizon client
 # add %USERPROFILE%\AppData\Roaming\Python\Python37\Scripts to System PATH
