@@ -4,6 +4,7 @@ Set-ExecutionPolicy Unrestricted -Confirm:$false -Force
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco install 7zip awscli azure-cli Boxstarter chefdk conemu firefox git git-credential-manager-for-windows kubernetes-cli nodejs python rsat sql-server-management-studio terraform vagrant vault vmware-powercli-psmodule vscode winpcap wireshark notepadplusplus powershell Fiddler Wireshark slack vlc sysinternals glogg nitroreader.install imgburn winpcap  wincdemu terminals puttytray flashplayerplugin  -Confirm:$false -Force
+
 Import-Module Boxstarter.WinConfig
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
 
@@ -32,7 +33,6 @@ New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWO
 # securecrt - plus backed up config
 # postman
 # mongodb compass
-# RSAT tools for Win10 @ \\it\TechnicalServices\Installs\Remote Server Admin Tool
 # added C:\Users\terrir\AppData\Roaming\npm to the System PATH
 # vmware remote client and horizon client
 # add %USERPROFILE%\AppData\Roaming\Python\Python37\Scripts to System PATH
