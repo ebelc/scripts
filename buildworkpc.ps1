@@ -35,3 +35,5 @@ New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWO
 # added C:\Users\ebelc\AppData\Roaming\npm to the System PATH
 # vmware remote client and horizon client
 # add %USERPROFILE%\AppData\Roaming\Python\Python37\Scripts to System PATH
+
+
